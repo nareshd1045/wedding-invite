@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E7" />
+      <stop offset="50%" stop-color="#FFECB3" />
+      <stop offset="100%" stop-color="#FFE0B2" />
+    </linearGradient>
+    <linearGradient id="maroonSuit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#800020" />
+      <stop offset="50%" stop-color="#5B0017" />
+      <stop offset="100%" stop-color="#3A000F" />
+    </linearGradient>
+    <linearGradient id="lehengaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E91E63" />
+      <stop offset="40%" stop-color="#C2185B" />
+      <stop offset="100%" stop-color="#880E4F" />
+    </linearGradient>
+    <linearGradient id="dupattaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FFA000" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#FFD54F" />
+      <stop offset="100%" stop-color="#FFA000" />
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#5D4037" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Card Canvas -->
+  <rect width="500" height="400" rx="20" fill="url(#bgGrad1)" />
+
+  <!-- Decorative Floral & Fairy Light Arch -->
+  <path d="M 50 380 Q 250 -40 450 380" fill="none" stroke="#D7CCC8" stroke-width="4" stroke-dasharray="8 8" opacity="0.6"/>
+  
+  <!-- Glowing Hanging Fairy Lanterns -->
+  <g opacity="0.85">
+    <line x1="100" y1="0" x2="100" y2="90" stroke="#BCAAA4" stroke-width="1.5"/>
+    <circle cx="100" cy="98" r="14" fill="#FFECB3" filter="url(#shadow1)"/>
+    <circle cx="100" cy="98" r="7" fill="#FFA000"/>
+
+    <line x1="400" y1="0" x2="400" y2="90" stroke="#BCAAA4" stroke-width="1.5"/>
+    <circle cx="400" cy="98" r="14" fill="#FFECB3" filter="url(#shadow1)"/>
+    <circle cx="400" cy="98" r="7" fill="#FFA000"/>
+
+    <line x1="250" y1="0" x2="250" y2="50" stroke="#BCAAA4" stroke-width="1.5"/>
+    <circle cx="250" cy="58" r="12" fill="#FFECB3" filter="url(#shadow1)"/>
+    <circle cx="250" cy="58" r="6" fill="#FFA000"/>
+  </g>
+
+  <!-- Floral Garlands on Top Curve -->
+  <g fill="#E91E63" stroke="#C2185B" stroke-width="1">
+    <circle cx="160" cy="65" r="9" fill="#FF7043"/>
+    <circle cx="178" cy="55" r="8" fill="#F48FB1"/>
+    <circle cx="196" cy="48" r="9" fill="#FFB74D"/>
+    <circle cx="304" cy="48" r="9" fill="#FFB74D"/>
+    <circle cx="322" cy="55" r="8" fill="#F48FB1"/>
+    <circle cx="340" cy="65" r="9" fill="#FF7043"/>
+  </g>
+
+  <!-- Ground Shadow for Couple -->
+  <ellipse cx="250" cy="365" rx="140" ry="16" fill="#8D6E63" opacity="0.2" />
+
+  <!-- ==================== GROOM (Indo-Western Sherwani) ==================== -->
+  <g id="groom" transform="translate(145, 110)">
+    <!-- Groom Legs / Churidar -->
+    <path d="M 42 210 L 38 250 L 50 252 L 53 210 Z" fill="#F5F5F0"/>
+    <path d="M 68 210 L 65 250 L 77 252 L 79 210 Z" fill="#F5F5F0"/>
+    <!-- Shoes (Juttis) -->
+    <path d="M 34 250 Q 52 250 56 256 Q 34 260 30 252 Z" fill="#800020"/>
+    <path d="M 62 250 Q 80 250 84 256 Q 62 260 58 252 Z" fill="#800020"/>
+
+    <!-- Indo-Western Asymmetrical Sherwani Coat -->
+    <path d="M 28 85 L 34 215 L 86 215 L 92 85 Z" fill="url(#maroonSuit)" filter="url(#shadow1)"/>
+    <!-- Asymmetric crossover flap with gold piping -->
+    <path d="M 40 85 L 75 125 L 72 215 L 56 215 L 60 135 L 34 85 Z" fill="#500015"/>
+    <path d="M 40 85 L 75 125 L 72 215" fill="none" stroke="url(#goldAcc)" stroke-width="2.5"/>
+    <!-- Gold buttons -->
+    <circle cx="70" cy="138" r="2.5" fill="url(#goldAcc)"/>
+    <circle cx="69" cy="154" r="2.5" fill="url(#goldAcc)"/>
+    <circle cx="68" cy="170" r="2.5" fill="url(#goldAcc)"/>
+    <circle cx="67" cy="186" r="2.5" fill="url(#goldAcc)"/>
+    <!-- Royal Brooch & Pocket Square -->
+    <path d="M 42 120 L 48 113 L 54 120 Z" fill="#FFD54F"/>
+    <circle cx="48" cy="122" r="3" fill="#D4AF37"/>
+    <circle cx="48" cy="122" r="1.5" fill="#C2185B"/>
+
+    <!-- Arms -->
+    <!-- Left Arm resting stylishly -->
+    <path d="M 28 85 Q 12 125 24 160 Q 30 160 34 150 Q 25 122 36 90 Z" fill="url(#maroonSuit)"/>
+    <circle cx="23" cy="162" r="6" fill="#F5D0B5"/> <!-- Hand -->
+    <!-- Right Arm around bride -->
+    <path d="M 92 85 Q 106 115 116 138 Q 110 144 102 140 Q 94 120 86 92 Z" fill="url(#maroonSuit)"/>
+    <circle cx="114" cy="142" r="6" fill="#F5D0B5"/> <!-- Hand -->
+
+    <!-- Mandarin Collar -->
+    <path d="M 45 78 L 75 78 L 73 87 L 47 87 Z" fill="#D4AF37"/>
+
+    <!-- Groom Head & Face -->
+    <!-- Neck -->
+    <rect x="52" y="70" width="16" height="12" fill="#F5D0B5"/>
+    <!-- Ears -->
+    <circle cx="44" cy="52" r="5" fill="#F5D0B5"/>
+    <circle cx="76" cy="52" r="5" fill="#F5D0B5"/>
+    <!-- Face shape -->
+    <ellipse cx="60" cy="52" rx="16" ry="19" fill="#F5D0B5"/>
+    <!-- Stylish Hair -->
+    <path d="M 44 48 C 44 26 76 26 76 48 C 76 38 68 32 60 32 C 50 32 44 38 44 48 Z" fill="#2E1C14"/>
+    <path d="M 44 44 Q 58 35 76 45 Q 68 36 52 38 Z" fill="#1F120C"/>
+    <!-- Eyebrows -->
+    <path d="M 49 46 Q 54 44 57 46" fill="none" stroke="#2E1C14" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 63 46 Q 66 44 71 46" fill="none" stroke="#2E1C14" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Eyes -->
+    <circle cx="53" cy="51" r="2.2" fill="#2E1C14"/>
+    <circle cx="67" cy="51" r="2.2" fill="#2E1C14"/>
+    <circle cx="54" cy="50" r="0.7" fill="#FFFFFF"/>
+    <circle cx="68" cy="50" r="0.7" fill="#FFFFFF"/>
+    <!-- Cute Smile -->
+    <path d="M 55 59 Q 60 65 65 59" fill="none" stroke="#C2185B" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Subtle Stubble/Mustache -->
+    <path d="M 54 56 Q 60 58 66 56" fill="none" stroke="#4A342B" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== BRIDE (Designer Lehenga) ==================== -->
+  <g id="bride" transform="translate(245, 115)">
+    <!-- Flared Lehenga Skirt -->
+    <path d="M 45 105 L 12 245 C 45 255 105 255 138 245 L 105 105 Z" fill="url(#lehengaGrad)" filter="url(#shadow1)"/>
+    <!-- Zari Work & Gold Borders on Lehenga -->
+    <path d="M 12 245 C 45 255 105 255 138 245" fill="none" stroke="url(#goldAcc)" stroke-width="10"/>
+    <path d="M 16 235 C 47 245 103 245 134 235" fill="none" stroke="#FFF9C4" stroke-width="2.5" stroke-dasharray="4 4"/>
+    <path d="M 24 220 C 50 228 100 228 126 220" fill="none" stroke="url(#goldAcc)" stroke-width="3"/>
+    
+    <!-- Lehenga Vertical Embroidered Kalis (Panels) -->
+    <path d="M 52 105 Q 48 175 35 240" stroke="url(#goldAcc)" stroke-width="1.5" fill="none"/>
+    <path d="M 64 105 Q 62 175 60 248" stroke="url(#goldAcc)" stroke-width="1.5" fill="none"/>
+    <path d="M 76 105 Q 82 175 90 248" stroke="url(#goldAcc)" stroke-width="1.5" fill="none"/>
+    <path d="M 88 105 Q 102 175 115 240" stroke="url(#goldAcc)" stroke-width="1.5" fill="none"/>
+
+    <!-- Gold Waistband (Kamarbandh) -->
+    <path d="M 45 105 C 60 110 90 110 105 105" fill="none" stroke="url(#goldAcc)" stroke-width="4"/>
+
+    <!-- Choli (Blouse) -->
+    <path d="M 50 78 L 45 105 C 65 110 85 110 105 105 L 100 78 Z" fill="#880E4F"/>
+    <path d="M 50 78 Q 75 95 100 78" fill="none" stroke="url(#goldAcc)" stroke-width="2"/>
+
+    <!-- Draped Dupatta across Body -->
+    <path d="M 45 80 Q 75 130 118 200 Q 128 190 100 130 Q 82 82 50 78 Z" fill="url(#dupattaGrad)" opacity="0.92"/>
+    <path d="M 45 80 Q 75 130 118 200" fill="none" stroke="url(#goldAcc)" stroke-width="3"/>
+
+    <!-- Arms with Bangles -->
+    <!-- Left arm holding dupatta -->
+    <path d="M 47 80 Q 32 105 38 135 Q 44 135 48 128 Q 42 105 53 84 Z" fill="#F8BBD0" opacity="0.3"/>
+    <path d="M 48 80 Q 36 108 42 135" stroke="#F5D0B5" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <!-- Bangles (Chooda) -->
+    <circle cx="41" cy="126" r="5" fill="none" stroke="#D4AF37" stroke-width="3"/>
+    <circle cx="41" cy="129" r="5" fill="none" stroke="#C2185B" stroke-width="2"/>
+    <!-- Right arm bent gracefully -->
+    <path d="M 100 80 Q 115 105 102 135" stroke="#F5D0B5" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <circle cx="103" cy="126" r="5" fill="none" stroke="#D4AF37" stroke-width="3"/>
+    <circle cx="103" cy="129" r="5" fill="none" stroke="#C2185B" stroke-width="2"/>
+
+    <!-- Bride Head & Face -->
+    <!-- Hair Back Volume -->
+    <ellipse cx="75" cy="50" rx="22" ry="24" fill="#1F120C"/>
+    <!-- Neck -->
+    <rect x="68" y="65" width="14" height="14" fill="#F5D0B5"/>
+    <!-- Gold Choker Necklace -->
+    <path d="M 66 72 Q 75 79 84 72" fill="none" stroke="url(#goldAcc)" stroke-width="4"/>
+    <circle cx="75" cy="78" r="2.5" fill="#E91E63"/>
+
+    <!-- Ears & Jhumkas -->
+    <circle cx="58" cy="50" r="4.5" fill="#F5D0B5"/>
+    <circle cx="92" cy="50" r="4.5" fill="#F5D0B5"/>
+    <!-- Hanging Jhumkas -->
+    <path d="M 57 54 L 54 62 L 60 62 Z" fill="url(#goldAcc)"/>
+    <path d="M 93 54 L 90 62 L 96 62 Z" fill="url(#goldAcc)"/>
+
+    <!-- Face shape -->
+    <ellipse cx="75" cy="50" rx="15" ry="17" fill="#F5D0B5"/>
+
+    <!-- Front Hairstyling & Parting -->
+    <path d="M 60 42 C 65 30 85 30 90 42 C 84 37 78 36 75 39 C 72 36 66 37 60 42 Z" fill="#1F120C"/>
+    
+    <!-- Maang Tikka (Forehead jewelry) -->
+    <line x1="75" y1="34" x2="75" y2="44" stroke="url(#goldAcc)" stroke-width="1.5"/>
+    <circle cx="75" cy="44" r="2.5" fill="url(#goldAcc)"/>
+    <circle cx="75" cy="44" r="1.2" fill="#E91E63"/>
+
+    <!-- Delicate Bindi -->
+    <circle cx="75" cy="47" r="1.2" fill="#C2185B"/>
+
+    <!-- Eyebrows -->
+    <path d="M 65 45 Q 69 43 72 45" fill="none" stroke="#1F120C" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M 78 45 Q 81 43 85 45" fill="none" stroke="#1F120C" stroke-width="1.4" stroke-linecap="round"/>
+
+    <!-- Smiling Eyes with Kohl/Kajal -->
+    <path d="M 66 49 Q 69 53 72 49" fill="none" stroke="#1F120C" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 78 49 Q 81 53 84 49" fill="none" stroke="#1F120C" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Blushing Cheeks -->
+    <ellipse cx="65" cy="55" rx="3.5" ry="2" fill="#FF8A80" opacity="0.6"/>
+    <ellipse cx="85" cy="55" rx="3.5" ry="2" fill="#FF8A80" opacity="0.6"/>
+
+    <!-- Rosy Bridal Smile -->
+    <path d="M 71 58 Q 75 63 79 58" fill="none" stroke="#D81B60" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating Golden Sparkles / Confetti -->
+  <g fill="#FFA000" opacity="0.8">
+    <path d="M 70 140 Q 75 140 75 135 Q 75 140 80 140 Q 75 140 75 145 Q 75 140 70 140 Z" />
+    <path d="M 420 160 Q 425 160 425 155 Q 425 160 430 160 Q 425 160 425 165 Q 425 160 420 160 Z" />
+    <circle cx="210" cy="85" r="3" fill="#FFD54F"/>
+    <circle cx="310" cy="90" r="3.5" fill="#FFD54F"/>
+    <circle cx="120" cy="280" r="4" fill="#FFD54F" opacity="0.5"/>
+    <circle cx="390" cy="270" r="4" fill="#FFD54F" opacity="0.5"/>
+  </g>
+
+  <!-- Event Title Ribbon / Tag inside Art -->
+  <g transform="translate(140, 345)">
+    <rect x="0" y="0" width="220" height="32" rx="16" fill="#800020" filter="url(#shadow1)" />
+    <rect x="2" y="2" width="216" height="28" rx="14" fill="none" stroke="url(#goldAcc)" stroke-width="1.5" />
+    <text x="110" y="20" font-family="'Cinzel', 'Playfair Display', serif" font-size="12" font-weight="bold" fill="#FFF8E7" text-anchor="middle" letter-spacing="2">RECEPTION EVE</text>
+  </g>
+</svg>
+

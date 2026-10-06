@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Wedding Invitation | Naresh 💕 Sabitha | Save the Date</title>
+  <meta name="title" content="Wedding Invitation | Naresh 💕 Sabitha">
+  <meta name="description" content="We joyfully invite you to celebrate the wedding festivities of Naresh & Sabitha from November 10th - 12th, 2026. Join us with your family and blessings!">
+  <meta name="theme-color" content="#800020">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wedding Invitation: Naresh 💕 Sabitha">
+  <meta property="og:description" content="We joyfully invite you to celebrate our wedding festivities from November 10th - 12th, 2026.">
+  <meta property="og:image" content="assets/muhurtham.svg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Background Decorative Watermark Mandalas -->
+  <svg class="bg-mandala-decor top-left" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="100" cy="100" r="90" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#800020" stroke-width="1"/>
+    <circle cx="100" cy="100" r="50" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="2 4"/>
+    <path d="M100 10 L100 190 M10 100 L190 100 M36 36 L164 164 M36 164 L164 36" stroke="#D4AF37" stroke-width="0.8"/>
+  </svg>
+  <svg class="bg-mandala-decor bottom-right" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="100" cy="100" r="90" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#800020" stroke-width="1"/>
+    <circle cx="100" cy="100" r="50" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="2 4"/>
+    <path d="M100 10 L100 190 M10 100 L190 100 M36 36 L164 164 M36 164 L164 36" stroke="#D4AF37" stroke-width="0.8"/>
+  </svg>
+
+  <!-- Interactive Falling Flower Petals Canvas -->
+  <canvas id="petals-canvas" aria-hidden="true"></canvas>
+
+  <!-- Floating Quick Control Buttons (Audio & Petal Shower) -->
+  <aside class="floating-controls" aria-label="Interactive Controls">
+    <!-- Background Music Toggle -->
+    <button type="button" id="toggle-audio-btn" class="fab-btn" data-tooltip="Play Traditional Melodies" aria-label="Toggle Wedding Melodies">
+      <div class="audio-waves" aria-hidden="true">
+        <span class="audio-bar"></span>
+        <span class="audio-bar"></span>
+        <span class="audio-bar"></span>
+      </div>
+    </button>
+    
+    <!-- Flower Petal Shower Toggle -->
+    <button type="button" id="toggle-petals-btn" class="fab-btn active" data-tooltip="Petals: On" aria-label="Toggle Petal Shower">
+      🌸
+    </button>
+  </aside>
+
+  <!-- Optional Custom MP3 Hook (plays built-in synthesizer if left empty) -->
+  <audio id="wedding-audio" preload="none"></audio>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand">
+        <span>Naresh</span>
+        <span class="heart" aria-hidden="true">❤</span>
+        <span>Sabitha</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Save The Date</a></li>
+        <li><a href="#events">Celebrations</a></li>
+        <li><a href="#contact">RSVP &amp; Contact</a></li>
+        <li><a href="#wishes">Blessings</a></li>
+        <li><a href="#contact" class="nav-btn-rsvp">RSVP Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    <!-- ======================================================================
+         SECTION 1: HERO SECTION (HEADER)
+         ====================================================================== -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-main-title">
+      <div class="hero-frame-border" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <!-- Auspicious Ganesha Emblem -->
+        <div class="auspicious-emblem reveal-on-scroll">
+          <img src="assets/ganesha.svg" alt="Auspicious Lord Ganesha Emblem" width="90" height="90">
+        </div>
+
+        <p class="auspicious-mantra reveal-on-scroll">|| Om Sri Ganeshaya Namaha ||</p>
+        <p class="tamil-blessing reveal-on-scroll">|| சுபமுகூர்த்த நல்வாழ்த்துகள் ||</p>
+
+        <div class="save-the-date-pill reveal-on-scroll delay-1">
+          <span>✨ Save The Date ✨</span>
+        </div>
+
+        <h2 class="hero-headline reveal-on-scroll delay-1">We Are Getting Married!</h2>
+
+        <!-- Couple Names -->
+        <div class="couple-names-wrap reveal-on-scroll delay-1">
+          <h1 id="hero-main-title" class="couple-names">
+            Naresh <span class="heart-symbol" aria-hidden="true">💕</span> Sabitha
+          </h1>
+        </div>
+
+        <!-- Main Date Highlight -->
+        <div class="hero-date-banner reveal-on-scroll delay-2">
+          <span class="date-tag">Wedding Festivities</span>
+          <span class="date-highlight">November 10th – 12th, 2026</span>
+        </div>
+
+        <!-- Interactive Countdown Timer to Muhurtham -->
+        <div class="countdown-container reveal-on-scroll delay-2">
+          <div class="countdown-label" id="countdown-status-text">
+            <span>Auspicious Muhurtham Begins In</span>
+          </div>
+          
+          <div class="countdown-grid" role="timer" aria-live="polite">
+            <div class="countdown-box">
+              <span class="countdown-num" id="cd-days">00</span>
+              <span class="countdown-text">Days</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-num" id="cd-hours">00</span>
+              <span class="countdown-text">Hours</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-num" id="cd-minutes">00</span>
+              <span class="countdown-text">Minutes</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-num" id="cd-seconds">00</span>
+              <span class="countdown-text">Seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions reveal-on-scroll delay-3">
+          <a href="#events" class="btn btn-primary">
+            <span>📅 View Wedding Events</span>
+          </a>
+          <button type="button" class="btn btn-secondary" data-calendar-event="all">
+            <span>🗓 Add To Calendar</span>
+          </button>
+          <button type="button" class="btn btn-secondary" id="share-invite-btn">
+            <span>💌 Share Invitation</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2: OUR WEDDING EVENTS (3 DISTINCT CARDS)
+         ====================================================================== -->
+    <section id="events" class="section events-section" aria-labelledby="events-section-title">
+      <div class="container">
+        
+        <header class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Sacred Moments &amp; Joyous Gatherings</span>
+          <h2 id="events-section-title" class="section-title">Our Wedding Events</h2>
+          <div class="section-divider">
+            <span class="line"></span>
+            <span class="symbol">❖</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-description">
+            With joyous hearts and the blessings of our parents, we warmly invite you and your family to grace each of our wedding ceremonies with your presence.
+          </p>
+        </header>
+
+        <!-- 3 Distinct Event Cards Grid -->
+        <div class="events-grid">
+          
+          <!-- ==================== CARD 1: RECEPTION 1 ==================== -->
+          <article class="event-card reveal-on-scroll delay-1" aria-labelledby="event-title-rec1">
+            <!-- Vector Illustration -->
+            <div class="event-art-container">
+              <img src="assets/Recption1.jpeg" alt="Illustration of Groom in Indo-Western Sherwani and Bride in Designer Lehenga" loading="lazy">
+            </div>
+
+            <div class="event-body">
+              <span class="event-tagline">Day 1 • Welcome Eve</span>
+              <h3 id="event-title-rec1" class="event-title">Reception 1</h3>
+
+              <ul class="event-details-list">
+                <!-- Date & Time -->
+                <li class="event-detail-item">
+                  <div class="event-detail-icon" aria-hidden="true">🕒</div>
+                  <div class="event-detail-text">
+                    <span class="detail-label">Date &amp; Time</span>
+                    <span class="detail-value">November 10, 2026</span>
+                    <span class="detail-sub">6:30 PM – 8:30 PM (Evening)</span>
+                  </div>
+                </li>
+
+                <!-- Venue -->
+                <li class="event-detail-item">
+                  <div class="event-detail-icon" aria-hidden="true">📍</div>
+                  <div class="event-detail-text">
+                    <span class="detail-label">Celebration Venue</span>
+                    <span class="detail-value">Thirumurugan Marriage Mahal</span>
+                    <span class="detail-sub">Thaalapathi, Kunnathur</span>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Actions -->
+              <div class="event-actions">
+                <a href="https://maps.app.goo.gl/epxD5CHRYitoGcfH7" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-directions">
+                  <span>🗺 Get Directions</span>
+                </a>
+                <button type="button" class="btn-cal-mini" data-calendar-event="reception1">
+                  <span>🗓 Remind in Google Calendar</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================== CARD 2: MARRIAGE CEREMONY (MUHURTHAM) ==================== -->
+          <!-- Highlighted Centerpiece Ceremony -->
+          <article class="event-card featured-event reveal-on-scroll delay-2" aria-labelledby="event-title-muhurtham">
+
+            <!-- Vector Illustration -->
+            <div class="event-art-container">
+              <img src="assets/Marriage.jpeg" alt="Traditional Tamil Wedding Illustration with Veshti, Kanjeevaram Silk Saree, Garlands and Thali" loading="lazy">
+            </div>
+
+            <div class="event-body">
+              <span class="event-tagline">Day 2 • Auspicious Muhurtham • சுபமுகூர்த்தம்</span>
+              <h3 id="event-title-muhurtham" class="event-title">Marriage Ceremony</h3>
+
+              <ul class="event-details-list">
+                <!-- Date & Time -->
+                <li class="event-detail-item">
+                  <div class="event-detail-icon" aria-hidden="true">🔔</div>
+                  <div class="event-detail-text">
+                    <span class="detail-label">Date &amp; Auspicious Timing</span>
+                    <span class="detail-value">November 11, 2026</span>
+                    <span class="detail-sub">6:00 AM – 7:00 AM (Early Morning)</span>
+                  </div>
+                </li>
+
+                <!-- Venue -->
+                <li class="event-detail-item">
+                  <div class="event-detail-icon" aria-hidden="true">🛕</div>
+                  <div class="event-detail-text">
+                    <span class="detail-label">Sacred Venue</span>
+                    <span class="detail-value">Thaalapathi Murugan Temple</span>
+                    <span class="detail-sub">Thaalapathi, Kunnathur</span>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Actions -->
+              <div class="event-actions">
+                <a href="https://maps.app.goo.gl/Z14EHMJqqJYvPq988" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-directions">
+                  <span>🗺 Get Directions</span>
+                </a>
+                <button type="button" class="btn-cal-mini" data-calendar-event="muhurtham">
+                  <span>🗓 Remind in Google Calendar</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================== CARD 3: RECEPTION 2 ==================== -->
+          <article class="event-card reveal-on-scroll delay-3" aria-labelledby="event-title-rec2">
+            <!-- Vector Illustration -->
+            <div class="event-art-container">
+              <img src="assets/Reception2.jpeg" alt="Illustration of Groom in Wedding Tuxedo Suit and Bride in Western Bridal Gown with Bouquet" loading="lazy">
+            </div>
+
+            <div class="event-body">
+              <span class="event-tagline">Day 3 • Grand Finale</span>
+              <h3 id="event-title-rec2" class="event-title">Reception 2</h3>
+
+              <ul class="event-details-list">
+                <!-- Date & Time -->
+                <li class="event-detail-item">
+                  <div class="event-detail-icon" aria-hidden="true">🕒</div>
+                  <div class="event-detail-text">
+                    <span class="detail-label">Date &amp; Time</span>
+                    <span class="detail-value">November 12, 2026</span>
+                    <span class="detail-sub">6:30 PM – 8:30 PM (Evening)</span>
+                  </div>
+                </li>
+
+                <!-- Venue -->
+                <li class="event-detail-item">
+                  <div class="event-detail-icon" aria-hidden="true">📍</div>
+                  <div class="event-detail-text">
+                    <span class="detail-label">Celebration Venue</span>
+                    <span class="detail-value">KVN Mahal, Coimbatore</span>
+                    <span class="detail-sub">Coimbatore, Tamil Nadu</span>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Actions -->
+              <div class="event-actions">
+                <a href="https://maps.app.goo.gl/7tVeKAqWYmgK9KNS7" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-directions">
+                  <span>🗺 Get Directions</span>
+                </a>
+                <button type="button" class="btn-cal-mini" data-calendar-event="reception2">
+                  <span>🗓 Remind in Google Calendar</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3: CONTACT & RSVP
+         ====================================================================== -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-section-title">
+      <div class="container">
+        
+        <header class="section-header reveal-on-scroll">
+          <span class="section-subtitle">We Are Looking Forward To Seeing You</span>
+          <h2 id="contact-section-title" class="section-title">Contact &amp; RSVP</h2>
+          <div class="section-divider">
+            <span class="line"></span>
+            <span class="symbol">❖</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-description">
+            For travel coordination, accommodation assistance, or any event inquiries, feel free to contact our family directly via WhatsApp or phone call.
+          </p>
+        </header>
+
+        <!-- Dedicated Contact Cards for Groom Side & Bride Side -->
+        <div class="contact-cards-grid">
+          
+          <!-- Groom Side Contact Card -->
+          <article class="contact-card reveal-on-scroll delay-1" aria-labelledby="groom-contact-name">
+            <div class="contact-avatar-icon" aria-hidden="true">
+              👔
+            </div>
+            <span class="contact-card-badge">Groom's Side</span>
+            <h3 id="groom-contact-name" class="contact-name">Dhanabal</h3>
+            <span class="contact-phone-display">+91 63858 11549</span>
+
+            <div class="contact-btn-group">
+              <a href="https://wa.me/916385811549?text=Hi%20Dhanabal,%20I%20have%20a%20query%20regarding%20Naresh%20%26%20Sabitha's%20wedding." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-whatsapp">
+                <span>💬 WhatsApp Chat</span>
+              </a>
+              <a href="tel:+916385811549" class="btn btn-call">
+                <span>📞 Call Directly</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Bride Side Contact Card -->
+          <article class="contact-card reveal-on-scroll delay-2" aria-labelledby="bride-contact-name">
+            <div class="contact-avatar-icon" aria-hidden="true">
+              🌸
+            </div>
+            <span class="contact-card-badge">Bride's Side</span>
+            <h3 id="bride-contact-name" class="contact-name">Varadharajan</h3>
+            <span class="contact-phone-display">+91 94426 47977</span>
+
+            <div class="contact-btn-group">
+              <a href="https://wa.me/919442647977?text=Hi%20Varadharajan,%20I%20have%20a%20query%20regarding%20Naresh%20%26%20Sabitha's%20wedding." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-whatsapp">
+                <span>💬 WhatsApp Chat</span>
+              </a>
+              <a href="tel:+919442647977" class="btn btn-call">
+                <span>📞 Call Directly</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ==================================================================
+             GUEST BLESSINGS & WISHES BOX
+             ================================================================== -->
+        <div id="wishes" class="wishes-card-wrap reveal-on-scroll delay-3">
+          <div class="wishes-header">
+            <h3>Send Your Warm Blessings</h3>
+            <p class="section-description">Leave a heartfelt note or message for Naresh &amp; Sabitha as they embark on this sacred journey together.</p>
+          </div>
+
+          <form id="guest-wishes-form" class="wishes-form">
+            <div class="form-group form-full">
+              <label for="guest-name">Your Name / Family</label>
+              <input type="text" id="guest-name" class="form-control" placeholder="e.g. Anand & Family" required>
+            </div>
+            
+            <div class="form-group form-full">
+              <label for="guest-message">Your Blessings &amp; Wishes</label>
+              <textarea id="guest-message" class="form-control" placeholder="Wishing you a lifetime filled with love, laughter and togetherness..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit-wish">
+              <span>💌 Post Your Blessing</span>
+            </button>
+          </form>
+
+          <!-- Live Feed of Guest Wishes -->
+          <div id="wishes-feed" class="wishes-feed-list" aria-live="polite"></div>
+        </div>
+
+        <!-- Quick Share Invitation Bar -->
+        <div class="share-section-banner reveal-on-scroll">
+          <p style="font-weight: 600; color: var(--crimson-royal);">Invite Friends &amp; Relatives</p>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 4px;">Share this digital invitation link with your loved ones.</p>
+          <div class="share-btns">
+            <a href="https://wa.me/?text=Namaste!%20You%20are%20cordially%20invited%20to%20celebrate%20the%20wedding%20of%20Naresh%20%F0%9F%92%95%20Sabitha%20from%20November%2010th%20-%2012th,%202026.%20Please%20find%20the%20invitation%20here:%20" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-whatsapp" 
+               style="font-size: 0.88rem; padding: 10px 22px;">
+              <span>📲 Share on WhatsApp</span>
+            </a>
+            <button type="button" id="copy-invite-link-btn" class="btn btn-secondary" style="font-size: 0.88rem; padding: 10px 22px;">
+              <span>📋 Copy Invitation Link</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-emblem" aria-hidden="true">❖</div>
+    <p class="footer-names">Naresh 💕 Sabitha</p>
+    <p class="footer-blessing">
+      "May our home be filled with laughter, our hearts with contentment, and our lives with endless love."
+    </p>
+    <p class="footer-credits">
+      November 10th – 12th, 2026 • Tamil Nadu, India
+    </p>
+  </footer>
+
+  <!-- Global Toast Notification Element -->
+  <div id="global-toast" class="toast-notice" role="alert" aria-live="assertive"></div>
+
+  <!-- Application Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
+

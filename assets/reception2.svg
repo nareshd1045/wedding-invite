@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgReception2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7" />
+      <stop offset="40%" stop-color="#F5EFE6" />
+      <stop offset="100%" stop-color="#EBE3D5" />
+    </linearGradient>
+    <linearGradient id="suitTux" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A233A" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#070C18" />
+    </linearGradient>
+    <linearGradient id="gownIvory" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#FBF9F5" />
+      <stop offset="100%" stop-color="#EDE7DC" />
+    </linearGradient>
+    <linearGradient id="goldGown" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#FFD54F" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+    <filter id="shadowRec2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#37474F" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="400" rx="20" fill="url(#bgReception2)" />
+
+  <!-- Elegant Crystal Chandelier in Top Center -->
+  <g transform="translate(250, 0)" opacity="0.85">
+    <line x1="0" y1="0" x2="0" y2="35" stroke="#B0BEC5" stroke-width="2"/>
+    <ellipse cx="0" cy="35" rx="30" ry="8" fill="url(#goldGown)"/>
+    <!-- Hanging Crystals / Beads -->
+    <path d="M -24 38 L -15 65 L 0 85 L 15 65 L 24 38" fill="none" stroke="#CFD8DC" stroke-width="1.5"/>
+    <circle cx="0" cy="85" r="4.5" fill="#FFF9C4" filter="url(#shadowRec2)"/>
+    <circle cx="-15" cy="65" r="3.5" fill="#FFF9C4"/>
+    <circle cx="15" cy="65" r="3.5" fill="#FFF9C4"/>
+    <circle cx="-8" cy="50" r="2.5" fill="#FFF"/>
+    <circle cx="8" cy="50" r="2.5" fill="#FFF"/>
+  </g>
+
+  <!-- Romantic Geometric Hexagonal Floral Arch in Background -->
+  <g stroke="url(#goldGown)" stroke-width="2" fill="none" opacity="0.6">
+    <polygon points="250,45 390,125 390,295 250,375 110,295 110,125" />
+    <polygon points="250,55 380,130 380,290 250,365 120,290 120,130" stroke-width="1" stroke-dasharray="6 6"/>
+  </g>
+
+  <!-- Arch Pastel Flowers (Eucalyptus & White Roses) -->
+  <g transform="translate(110, 130)">
+    <circle cx="0" cy="0" r="10" fill="#F8BBD0"/>
+    <circle cx="-5" cy="12" r="8" fill="#FFF"/>
+    <circle cx="10" cy="-6" r="7" fill="#C8E6C9"/>
+    <circle cx="-10" cy="-8" r="6" fill="#A5D6A7"/>
+  </g>
+  <g transform="translate(390, 130)">
+    <circle cx="0" cy="0" r="10" fill="#F8BBD0"/>
+    <circle cx="5" cy="12" r="8" fill="#FFF"/>
+    <circle cx="-10" cy="-6" r="7" fill="#C8E6C9"/>
+    <circle cx="10" cy="-8" r="6" fill="#A5D6A7"/>
+  </g>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="250" cy="365" rx="140" ry="16" fill="#546E7A" opacity="0.2" />
+
+  <!-- ==================== GROOM (Tuxedo Suit & Bow Tie) ==================== -->
+  <g id="tuxGroom" transform="translate(145, 100)">
+    <!-- Tuxedo Trousers -->
+    <path d="M 40 185 L 35 260 L 52 260 L 54 185 Z" fill="#0F172A"/>
+    <path d="M 66 185 L 68 260 L 85 260 L 80 185 Z" fill="#0F172A"/>
+    <!-- Black Oxford Leather Shoes -->
+    <path d="M 30 258 Q 50 258 54 265 Q 32 268 28 260 Z" fill="#000000"/>
+    <path d="M 66 258 Q 86 258 90 265 Q 68 268 64 260 Z" fill="#000000"/>
+
+    <!-- Tuxedo Jacket -->
+    <path d="M 28 80 L 32 195 L 88 195 L 92 80 Z" fill="url(#suitTux)" filter="url(#shadowRec2)"/>
+    
+    <!-- Crisp White Dress Shirt & Satin Lapels -->
+    <polygon points="50,80 70,80 60,135" fill="#FFFFFF"/>
+    <!-- Black Bow Tie -->
+    <polygon points="53,84 60,88 53,92" fill="#0F172A"/>
+    <polygon points="67,84 60,88 67,92" fill="#0F172A"/>
+    <circle cx="60" cy="88" r="2.5" fill="#D4AF37"/>
+
+    <!-- Shawl Lapels -->
+    <path d="M 40 80 Q 56 125 56 150 L 50 150 Q 32 110 32 80 Z" fill="#000000"/>
+    <path d="M 80 80 Q 64 125 64 150 L 70 150 Q 88 110 88 80 Z" fill="#000000"/>
+
+    <!-- Rose Boutonniere & Pocket Square on Lapel -->
+    <line x1="42" y1="110" x2="48" y2="108" stroke="#FFFFFF" stroke-width="2.5"/>
+    <circle cx="44" cy="104" r="3.5" fill="#E91E63"/>
+    <circle cx="42" cy="106" r="1.5" fill="#81C784"/>
+
+    <!-- Tuxedo Buttons -->
+    <circle cx="60" cy="160" r="2.2" fill="#D4AF37"/>
+    <circle cx="60" cy="175" r="2.2" fill="#D4AF37"/>
+
+    <!-- Arms -->
+    <!-- Left arm in pocket/resting -->
+    <path d="M 28 80 Q 12 120 22 155 Q 28 155 32 145 Q 24 118 36 85 Z" fill="url(#suitTux)"/>
+    <circle cx="21" cy="156" r="5.5" fill="#F5D0B5"/>
+    <!-- Right arm supporting bride -->
+    <path d="M 92 80 Q 106 110 114 135 Q 108 140 102 136 Q 94 115 86 85 Z" fill="url(#suitTux)"/>
+    <circle cx="112" cy="138" r="5.5" fill="#F5D0B5"/>
+
+    <!-- Head & Face -->
+    <rect x="52" y="65" width="16" height="15" fill="#F5D0B5"/>
+    <circle cx="44" cy="48" r="5" fill="#F5D0B5"/>
+    <circle cx="76" cy="48" r="5" fill="#F5D0B5"/>
+    <ellipse cx="60" cy="48" rx="16" ry="19" fill="#F5D0B5"/>
+    
+    <!-- Modern Suited Haircut (Sharp Pompadour / Side Part) -->
+    <path d="M 44 44 C 44 24 76 24 76 44 C 76 34 68 28 60 28 C 50 28 44 34 44 44 Z" fill="#212121"/>
+    <path d="M 44 40 Q 56 32 76 40 Q 66 32 52 34 Z" fill="#121212"/>
+
+    <!-- Eyes & Brows -->
+    <path d="M 49 43 Q 54 41 57 43" stroke="#212121" stroke-width="1.8" fill="none"/>
+    <path d="M 63 43 Q 66 41 71 43" stroke="#212121" stroke-width="1.8" fill="none"/>
+    <circle cx="53" cy="48" r="2.2" fill="#212121"/>
+    <circle cx="67" cy="48" r="2.2" fill="#212121"/>
+    <circle cx="54" cy="47" r="0.7" fill="#FFFFFF"/>
+    <circle cx="68" cy="47" r="0.7" fill="#FFFFFF"/>
+
+    <!-- Charming Groom Smile -->
+    <path d="M 55 56 Q 60 62 65 56" stroke="#C2185B" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <!-- Neat Groom Trim -->
+    <path d="M 54 53 Q 60 55 66 53" stroke="#424242" stroke-width="1" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== BRIDE (Western Wedding Gown & Veil) ==================== -->
+  <g id="gownBride" transform="translate(245, 100)">
+    <!-- Flowing Bridal Veil behind bride -->
+    <path d="M 75 35 C 115 50 145 150 135 255 C 110 255 90 200 80 120 Z" fill="#FFFFFF" opacity="0.45" filter="url(#shadowRec2)"/>
+    <path d="M 75 35 C 115 50 145 150 135 255" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>
+
+    <!-- Ballgown Skirt with Lace Trim -->
+    <path d="M 48 95 L 12 255 C 45 265 105 265 140 255 L 102 95 Z" fill="url(#gownIvory)" filter="url(#shadowRec2)"/>
+    <!-- Lace Details and Gown Folds -->
+    <path d="M 12 255 C 45 265 105 265 140 255" stroke="url(#goldGown)" stroke-width="3" fill="none"/>
+    <path d="M 22 245 C 50 252 100 252 130 245" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+    
+    <!-- Flowing Vertical Dress Folds -->
+    <path d="M 55 98 Q 50 170 38 252" stroke="#E0D7C9" stroke-width="1.5" fill="none"/>
+    <path d="M 68 98 Q 66 170 65 258" stroke="#E0D7C9" stroke-width="1.5" fill="none"/>
+    <path d="M 82 98 Q 86 170 95 258" stroke="#E0D7C9" stroke-width="1.5" fill="none"/>
+    <path d="M 95 98 Q 106 170 120 252" stroke="#E0D7C9" stroke-width="1.5" fill="none"/>
+
+    <!-- Sweetheart Bodice / Corset -->
+    <path d="M 52 72 C 52 64 64 64 75 70 C 86 64 98 64 98 72 L 95 98 C 80 102 70 102 55 98 Z" fill="#FFFFFF"/>
+    <!-- Bodice Floral Lace Embellishments -->
+    <path d="M 52 72 Q 75 80 98 72" stroke="url(#goldGown)" stroke-width="1.5" fill="none"/>
+    <circle cx="75" cy="80" r="2" fill="#D4AF37"/>
+    <circle cx="68" cy="88" r="1.5" fill="#D4AF37"/>
+    <circle cx="82" cy="88" r="1.5" fill="#D4AF37"/>
+
+    <!-- Arms -->
+    <path d="M 52 75 Q 36 100 46 128" stroke="#F5D0B5" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <path d="M 98 75 Q 110 100 96 128" stroke="#F5D0B5" stroke-width="9" stroke-linecap="round" fill="none"/>
+
+    <!-- Wedding Bouquet of Roses & Lilies held in hand -->
+    <g transform="translate(62, 120)" filter="url(#shadowRec2)">
+      <circle cx="8" cy="5" r="8" fill="#F8BBD0"/>
+      <circle cx="15" cy="1" r="7" fill="#FFFFFF"/>
+      <circle cx="2" cy="0" r="7" fill="#FF80AB"/>
+      <circle cx="10" cy="-6" r="6" fill="#F48FB1"/>
+      <circle cx="20" cy="8" r="5" fill="#FFF"/>
+      <!-- Greenery & Ribbon -->
+      <path d="M 3 12 L -2 18 L 6 15" stroke="#81C784" stroke-width="2" fill="none"/>
+      <path d="M 18 12 L 24 18 L 16 15" stroke="#81C784" stroke-width="2" fill="none"/>
+      <path d="M 10 14 L 10 26 L 14 26 L 12 14" fill="#D4AF37"/>
+    </g>
+
+    <!-- Neck & Elegant Pearl/Diamond Pendant Necklace -->
+    <rect x="68" y="58" width="14" height="15" fill="#F5D0B5"/>
+    <path d="M 64 64 Q 75 70 86 64" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="75" cy="69" r="2.2" fill="#FFFFFF" stroke="#D4AF37" stroke-width="0.8"/>
+
+    <!-- Head & Face -->
+    <ellipse cx="75" cy="45" rx="20" ry="22" fill="#2E1C14"/> <!-- Voluminous Updo Hair -->
+    <circle cx="58" cy="45" r="4.5" fill="#F5D0B5"/>
+    <circle cx="92" cy="45" r="4.5" fill="#F5D0B5"/>
+    <!-- Pearl Drop Earrings -->
+    <circle cx="57" cy="51" r="2" fill="#FFF"/>
+    <circle cx="93" cy="51" r="2" fill="#FFF"/>
+
+    <ellipse cx="75" cy="45" rx="15" ry="17" fill="#F5D0B5"/>
+
+    <!-- Bridal Tiara & Crown -->
+    <path d="M 65 30 L 70 24 L 75 20 L 80 24 L 85 30 Z" fill="url(#goldGown)"/>
+    <circle cx="75" cy="20" r="1.8" fill="#FFF"/>
+    <circle cx="70" cy="24" r="1.5" fill="#FFF"/>
+    <circle cx="80" cy="24" r="1.5" fill="#FFF"/>
+
+    <!-- Updo Styling & Tendril Curls -->
+    <path d="M 60 38 C 65 28 85 28 90 38 C 84 33 78 32 75 35 C 72 32 66 33 60 38 Z" fill="#2E1C14"/>
+    <path d="M 58 48 Q 56 55 58 60" stroke="#2E1C14" stroke-width="1.5" fill="none"/>
+
+    <!-- Brows & Eyes with Glam Makeup -->
+    <path d="M 65 40 Q 69 38 72 40" stroke="#1F120C" stroke-width="1.4" fill="none"/>
+    <path d="M 78 40 Q 81 38 85 40" stroke="#1F120C" stroke-width="1.4" fill="none"/>
+    <path d="M 66 44 Q 69 48 72 44" stroke="#1F120C" stroke-width="2" fill="none"/>
+    <path d="M 78 44 Q 81 48 84 44" stroke="#1F120C" stroke-width="2" fill="none"/>
+    <circle cx="69" cy="44" r="1" fill="#1F120C"/>
+    <circle cx="81" cy="44" r="1" fill="#1F120C"/>
+
+    <!-- Blushing Pink Cheeks -->
+    <ellipse cx="65" cy="50" rx="3.5" ry="2" fill="#FF80AB" opacity="0.6"/>
+    <ellipse cx="85" cy="50" rx="3.5" ry="2" fill="#FF80AB" opacity="0.6"/>
+
+    <!-- Radiant Bride Smile -->
+    <path d="M 71 53 Q 75 58 79 53" stroke="#D81B60" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Golden Stars & Sparkles -->
+  <g fill="url(#goldGown)" opacity="0.85">
+    <path d="M 65 95 Q 70 95 70 90 Q 70 95 75 95 Q 70 95 70 100 Q 70 95 65 95 Z"/>
+    <path d="M 430 95 Q 435 95 435 90 Q 435 95 440 95 Q 435 95 435 100 Q 435 95 430 95 Z"/>
+    <circle cx="95" cy="220" r="3" fill="#FFE082"/>
+    <circle cx="410" cy="220" r="3" fill="#FFE082"/>
+    <circle cx="210" cy="65" r="2.5" fill="#FFE082"/>
+    <circle cx="290" cy="65" r="2.5" fill="#FFE082"/>
+  </g>
+
+  <!-- Event Title Ribbon / Tag inside Art -->
+  <g transform="translate(130, 345)">
+    <rect x="0" y="0" width="240" height="32" rx="16" fill="#800020" filter="url(#shadowRec2)" />
+    <rect x="2" y="2" width="236" height="28" rx="14" fill="none" stroke="url(#goldGown)" stroke-width="1.5" />
+    <text x="120" y="20" font-family="'Cinzel', 'Playfair Display', serif" font-size="12" font-weight="bold" fill="#FFF8E7" text-anchor="middle" letter-spacing="2">GRAND RECEPTION</text>
+  </g>
+</svg>
+

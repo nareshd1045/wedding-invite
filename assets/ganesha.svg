@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="30%" stop-color="#FFD54F" />
+      <stop offset="70%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA771C" />
+    </linearGradient>
+    <linearGradient id="maroonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B71C1C" />
+      <stop offset="100%" stop-color="#6A0012" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Aura / Halo -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="4 6" opacity="0.7"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Petals around halo -->
+  <g stroke="url(#goldGrad)" stroke-width="1" fill="none" opacity="0.6">
+    <circle cx="100" cy="12" r="3" fill="#D4AF37"/>
+    <circle cx="100" cy="188" r="3" fill="#D4AF37"/>
+    <circle cx="12" cy="100" r="3" fill="#D4AF37"/>
+    <circle cx="188" cy="100" r="3" fill="#D4AF37"/>
+    <circle cx="38" cy="38" r="2.5" fill="#D4AF37"/>
+    <circle cx="162" cy="38" r="2.5" fill="#D4AF37"/>
+    <circle cx="38" cy="162" r="2.5" fill="#D4AF37"/>
+    <circle cx="162" cy="162" r="2.5" fill="#D4AF37"/>
+  </g>
+  
+  <!-- Main Auspicious Ganesha Emblem (Stylized Calligraphic Tamil/Vedic Ganesha) -->
+  <g fill="none" stroke="url(#goldGrad)" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+    <!-- Crown / Mukut -->
+    <path d="M82 45 L100 24 L118 45 Z" fill="url(#goldGrad)" stroke-width="2"/>
+    <circle cx="100" cy="22" r="3.5" fill="#B71C1C"/>
+    <path d="M85 45 C95 40 105 40 115 45" stroke-width="2.5"/>
+    <circle cx="100" cy="36" r="2.5" fill="#FFF"/>
+
+    <!-- Left Ear (Viewer's left) -->
+    <path d="M78 52 C50 48 42 75 52 92 C60 105 76 102 82 96" stroke-width="3.5"/>
+    
+    <!-- Right Ear (Viewer's right) -->
+    <path d="M122 52 C148 48 156 75 146 92 C138 105 124 102 118 96" stroke-width="3.5"/>
+
+    <!-- Forehead & Head outline -->
+    <path d="M82 52 C94 48 106 48 118 52" stroke-width="3.5"/>
+
+    <!-- Tilak / Namam on Forehead -->
+    <path d="M96 52 Q100 44 104 52 Q100 68 96 52 Z" fill="#B71C1C" stroke="#D4AF37" stroke-width="1"/>
+    <circle cx="100" cy="62" r="2" fill="#D4AF37"/>
+
+    <!-- Trunk curving gracefully to left (traditional auspicious Valampuri / Idampuri) -->
+    <path d="M100 65 C108 80 112 100 106 122 C100 144 80 146 72 138 C64 130 68 118 78 118 C86 118 88 126 84 130" stroke-width="4.5"/>
+
+    <!-- Modak / Ladoo in trunk / hand -->
+    <ellipse cx="80" cy="122" rx="4.5" ry="4" fill="url(#goldGrad)"/>
+
+    <!-- Eyes (Gentle, Smiling) -->
+    <path d="M84 66 Q89 63 94 67" stroke-width="2.5"/>
+    <circle cx="89" cy="67" r="1.5" fill="#5D4037"/>
+    <path d="M106 67 Q111 63 116 66" stroke-width="2.5"/>
+    <circle cx="111" cy="67" r="1.5" fill="#5D4037"/>
+
+    <!-- Tusk (Single full tusk and broken tusk) -->
+    <path d="M77 88 L68 93" stroke-width="2.5" stroke="#FFFDF0"/>
+    <path d="M123 88 L128 92" stroke-width="2" stroke="#FFFDF0"/>
+
+    <!-- Belly line / Asana -->
+    <path d="M68 142 C80 162 120 162 132 142" stroke-width="3"/>
+    
+    <!-- Auspicious Lotus Base petals -->
+    <path d="M60 162 C75 152 90 166 100 174 C110 166 125 152 140 162 C125 178 75 178 60 162 Z" fill="url(#maroonGrad)" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  </g>
+</svg>
+
