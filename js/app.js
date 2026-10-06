@@ -527,6 +527,13 @@ function initShareAndCopy() {
     });
   }
 
+  // Update WhatsApp Share Link dynamically with actual current page URL
+  const waShareLink = document.querySelector('.share-btns .btn-whatsapp');
+  if (waShareLink) {
+    const baseText = "Namaste! You are cordially invited to celebrate the wedding of Naresh 💕 Sabitha from November 10th - 12th, 2026. Please find the invitation here: ";
+    waShareLink.href = `https://wa.me/?text=${encodeURIComponent(baseText + window.location.href)}`;
+  }
+
   // Add to Calendar Buttons
   document.querySelectorAll('[data-calendar-event]').forEach((btn) => {
     btn.addEventListener('click', (e) => {
